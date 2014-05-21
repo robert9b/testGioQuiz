@@ -22,9 +22,16 @@ public class QuizActivity extends Activity {
 	private int mCurrentIndex = 0;
 	
 	private void updateQuestion(){
-		int question = mQuestionBank[]
+		int question = mQuestionBank[mCurrentIndex].getQuestion();
+		mQuestionTextView.setText(question);
 	}
-	private void checkAnswer(boolean userPressedTrue)
+	private void checkAnswer(boolean userPressedTrue) {
+		boolean answerIsTrue = mQuestionBank[mCurrentIndex].isTrueQuestion();
+		
+		int messsageResId = 0;
+		
+		if (user)
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
