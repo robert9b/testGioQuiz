@@ -30,7 +30,12 @@ public class QuizActivity extends Activity {
 		
 		int messsageResId = 0;
 		
-		if (user)
+		if (userPressedTrue == answerIsTrue){
+			messsageResId = R.string.correct_toast;
+		}else
+		{
+			messsageResId = R.string.correct_toast;
+		}
 	}
 
 	@Override
@@ -43,8 +48,7 @@ public class QuizActivity extends Activity {
 		mTrueButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(QuizActivity.this, R.string.incorrect_toast,
-						Toast.LENGTH_SHORT).show();
+				checkAnswer(true);
 
 			}
 		});
@@ -53,8 +57,7 @@ public class QuizActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(QuizActivity.this, R.string.correct_toast,
-						Toast.LENGTH_SHORT).show();
+				checkAnswer(false);
 
 			}
 		});
