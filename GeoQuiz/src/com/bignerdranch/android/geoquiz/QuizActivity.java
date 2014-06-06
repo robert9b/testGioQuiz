@@ -17,8 +17,8 @@ public class QuizActivity extends Activity {
 	private TrueFalse[] mQuestionBank = new TrueFalse[] {
 			new TrueFalse(R.string.question_oceans, true),
 			new TrueFalse(R.string.question_mideast, false),
-			new TrueFalse(R.string.question_africa, false),
-			new TrueFalse(R.string.question_americas, true),
+			new TrueFalse(R.string.question_africa, true),
+			new TrueFalse(R.string.question_americas, false),
 			new TrueFalse(R.string.question_asia, true), };
 	private int mCurrentIndex = 0;
 	
