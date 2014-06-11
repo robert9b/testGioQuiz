@@ -33,7 +33,8 @@ public class QuizActivity extends Activity {
 		
 		if (userPressedTrue == answerIsTrue){
 			messsageResId = R.string.correct_toast;
-		}else
+		}
+		else
 		{
 			messsageResId = R.string.correct_toast;
 		}
